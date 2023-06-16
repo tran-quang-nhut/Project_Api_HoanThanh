@@ -1,0 +1,273 @@
+// reset css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+
+// import station
+@import "./scss/variable";
+@import "./scss/helper";
+// @import "./index.html"
+header {
+  .navbar {
+    padding: 20px 40px;
+    display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+    .logo {
+      img {
+        width: 150px;
+      }
+    }
+
+    .navlist {
+      ul.direction {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        li.page {
+          a {
+            text-decoration: none;
+            @include styleText($fs-2, $fw-1, $color-1st);
+          }
+        }
+      }
+    }
+
+    .mb-3 {
+      display: flex;
+      position: relative;
+
+      button {
+        border: 0;
+        border-radius: 50%;
+        background: transparent;
+        position: absolute;
+        right: 10px;
+        top: 7px;
+      }
+    }
+
+    .icons {
+      font-size: $fs-2;
+
+      a {
+        color: rgba(0, 0, 0, 0.342);
+        margin-right: 20px;
+        transition: all 0.5s;
+      }
+
+      a:nth-child(1):hover {
+        color: green;
+      }
+
+      a:nth-child(2):hover {
+        color: red;
+      }
+
+      a:nth-child(3):hover {
+        color: blue;
+      }
+    }
+  }
+}
+
+.banner {
+  .banner__vid {
+    padding: 0px 40px;
+    width: 100%;
+    height: 100vh;
+
+    video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.slogan {
+  padding: 50px 40px;
+  display: flex;
+
+  .slogan__img {
+    width: 50%;
+    margin-right: 40px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .content {
+    width: 48%;
+    border: 10px dashed pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .text {
+      h1 {
+        @include styleText($fs-5, $fw-4, $color-1st);
+
+        span {
+          color: red;
+        }
+      }
+
+      P {
+        @include styleText($fs-3, $fw-2, $color-1st);
+      }
+
+      @keyframes spin {
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+    }
+  }
+}
+
+.items {
+  padding: 0px 40px 20px 40px;
+
+  .items__title {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      position: relative;
+      top: 44px;
+    }
+
+    .right {
+      display: flex;
+      justify-content: baseline;
+      position: relative;
+      top: 44px;
+      z-index: 9999;
+
+      i {
+        font-size: $fs-3;
+      }
+
+      a {
+        text-decoration: none;
+        color: $color-1st;
+      }
+    }
+  }
+
+  .items__carousel .item-product {
+    float: left;
+    min-height: 480px;
+    width: 300px;
+    margin-right: 20px;
+    // position: relative;
+    text-align: center;
+
+    h3 {
+      position: relative;
+      top: 72px;
+      z-index: 9999;
+      // left: 123px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+      filter: saturate(10%);
+      transition: all 0.5s;
+      border-radius: 10px;
+      transform: scale(0.9);
+
+      &:hover {
+        filter: saturate(100%);
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.795);
+  padding: 30px 70px;
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .column1 {
+      line-height: 40px;
+
+      a {
+        text-decoration: none;
+        @include styleText($fs-2, $fw-5, $color-2nd);
+      }
+    }
+
+    #list {
+      .title {
+        a {
+          text-decoration: none;
+          @include styleText($fs-2, $fw-5, $color-2nd);
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        line-height: 40px;
+
+        a {
+          text-decoration: none;
+          @include styleText($fs-2, $fw-3, rgba(255, 255, 255, 0.425));
+          transition: all 0.5s;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+
+    .column4 {
+      display: flex;
+
+      .icon {
+        background-color: rgba(255, 255, 255, 0.596);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 15px;
+        transition: all 0.5s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: white;
+        }
+
+        i {
+          color: rgba(0, 0, 0, 0.596);
+        }
+      }
+    }
+  }
+}

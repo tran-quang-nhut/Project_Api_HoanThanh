@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Capstone_JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font dosis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Slick carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://kenwheeler.github.io/slick/slick/slick-theme.css"
+    />
+
+    <!-- css main -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./img/air jordan logo.jpg" alt="logo air jordan"
+          /></a>
+        </div>
+        <div class="navlist">
+          <ul class="direction">
+            <li class="page"><a href="#">Men</a></li>
+            <li class="page"><a href="#">Women</a></li>
+            <li class="page"><a href="#">Kids</a></li>
+            <li class="page"><a href="#">Sale</a></li>
+          </ul>
+        </div>
+        <!-- THANH SEARCH -->
+        <div class="search">
+          <div class="search__bar">
+            <form action="">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id=""
+                  aria-describedby="helpId"
+                  placeholder="search here"
+                />
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="icons">
+          <a href="./register.html" name="sign in"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-heart"></i></a>
+          <a href="./shop.html"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+            style="display: none"
+          >
+            <i class="fa-solid fa-bars fa-lg"></i>
+          </button>
+
+          <div
+            class="offcanvas-lg offcanvas-end"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+            style="display: none"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <p
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample1"
+                    aria-expanded="false"
+                    aria-controls="multiCollapseExample1"
+                  >
+                    <span>Men</span>
+                  </button>
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2"
+                    aria-expanded="false"
+                    aria-controls="multiCollapseExample2"
+                  >
+                    <span>Women</span>
+                  </button>
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample3"
+                    aria-expanded="false"
+                    aria-controls="multiCollapseExample3"
+                  >
+                    <span>Kids</span>
+                  </button>
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample4"
+                    aria-expanded="false"
+                    aria-controls="multiCollapseExample4"
+                  >
+                    <span>Sale</span>
+                  </button>
+                </p>
+                <div class="row">
+                  <div class="row">
+                    <div class="collapse" id="multiCollapseExample1">
+                      <ul class="list-group">
+                        <li class="list-group-item">All Shoes</li>
+                        <li class="list-group-item">Newest Sneaker</li>
+                        <li class="list-group-item">Life Style</li>
+                        <li class="list-group-item">Jordan</li>
+                        <li class="list-group-item">Limited Edition</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="collapse" id="multiCollapseExample2">
+                      <ul class="list-group">
+                        <li class="list-group-item">All Shoes</li>
+                        <li class="list-group-item">Newest Sneaker</li>
+                        <li class="list-group-item">Life Style</li>
+                        <li class="list-group-item">Jordan</li>
+                        <li class="list-group-item">Limited Edition</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="collapse" id="multiCollapseExample3">
+                      <ul class="list-group">
+                        <li class="list-group-item">All Shoes</li>
+                        <li class="list-group-item">Newest Sneaker</li>
+                        <li class="list-group-item">Life Style</li>
+                        <li class="list-group-item">Jordan</li>
+                        <li class="list-group-item">Limited Edition</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="collapse" id="multiCollapseExample4">
+                      <ul class="list-group">
+                        <li class="list-group-item">All Shoes</li>
+                        <li class="list-group-item">Newest Sneaker</li>
+                        <li class="list-group-item">Life Style</li>
+                        <li class="list-group-item">Jordan</li>
+                        <li class="list-group-item">Limited Edition</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- BANNER -->
+    <div class="banner">
+      <div class="banner__title"></div>
+      <div class="banner__vid">
+        <video
+          controls
+          autoplay
+          loop
+          src="./img/video/121867_Shoes dangling from a wire _By_Karim_Yatrib_Artlist_HD.mp4"
+        ></video>
+      </div>
+    </div>
+    <!-- END BANNER -->
+
+    <!-- HYPE SLOGAN -->
+    <div class="slogan">
+      <div class="slogan__img">
+        <img src="./img/guardian of galaxy.jpg" alt="" />
+      </div>
+      <div class="content">
+        <div class="text">
+          <h1>
+            NEW GUARDIAN ON STORE
+            <br />
+            GO GET IT! <span> NOW!</span>
+          </h1>
+          <p>
+            There are two types of being in the universe:
+            <br />
+            those who dance, and those who do not.
+            <br />
+            I am Groooooot!!!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- END HYPE SLOGAN -->
+    <!-- TITLE POS -->
+    <div class="pos_title">
+      <div class="container">
+        <h2>
+          <span>Week Special Products</span>
+          <p>VIEW ALL BEST SELLERS.</p>
+        </h2>
+      </div>
+    </div>
+    <!-- END TITLE POSE -->
+    <!-- Product API Modal -->
+    <section class="product__modal">
+      <div class="container">
+        <div class="product__modal__category">
+          <div class="row" id="tbodyProduct">
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/adidas-prophere.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Adidas Prophere</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      The midsole contains 20% more Boost for an amplified Boost
+                      feeling.
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$350.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/adidas-prophere-black-white.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Adidas Prophere Black White</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      The midsole contains 20% more Boost for an amplified Boost
+                      feeling.
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$450.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/adidas-prophere-customize.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Adidas Prophere Customize</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      The midsole contains 20% more Boost for an amplified Boost
+                      feeling.
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$375.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/adidas-super-star-red.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Adidas Super Star Red</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      The midsole contains 20% more Boost for an amplified Boost
+                      feeling.
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$465.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/adidas-swift-run.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Adidas Swift Run</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      The midsole contains 20% more Boost for an amplified Boost
+                      feeling.
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$250.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/adidas-tenisky-super-star.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Adidas Tenisky Super Star</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      The midsole contains 20% more Boost for an amplified Boost
+                      feeling.
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$250.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./product/product.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/adidas-ultraboost-4.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./product/product.html?productid=7"
+                      >Adidas Ultraboost 4</a
+                    >
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      The midsole contains 20% more Boost for an amplified Boost
+                      feeling.
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$450.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./product/product.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/adidas-yeezy-350.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./product/product.html?productid=8"
+                      >Adidas Yeezy 350</a
+                    >
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      The midsole contains 20% more Boost for an amplified Boost
+                      feeling.
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$150.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./product/product.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/nike-adapt-bb.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Nike Adapt BB</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      Paul George is the rare high-percentage shooter
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$330.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/nike-air-max-97.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Nike Air Max 97</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      Paul George is the rare high-percentage shooter
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$150.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/nike-air-max-97-blue.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Nike Air Max 97 Blue</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      Paul George is the rare high-percentage shooter
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$450.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/nike-air-max-270-react.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Nike Air Max 270 React</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      Paul George is the rare high-percentage shooter
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$750.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/nike-flyknit.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html3">Nike Flyknit</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      Paul George is the rare high-percentage shooter
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$350.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/nike-react-element.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Nike React Element</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      Paul George is the rare high-percentage shooter
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$480.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/nike-shox-tl.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Nike Shox TL</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      Paul George is the rare high-percentage shooter
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$990.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/nike-sp-dunk.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Nike SP Dunk</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      Paul George is the rare high-percentage shooter
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$450.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/van-old-school.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Van Old School</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      The Vans Coastal Classic Slip-On features sturdy low
+                      profile canvas and textile uppers
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$80.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/vans-black-black.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Vans black black</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      The Vans Coastal Classic Slip-On features sturdy low
+                      profile canvas and textile uppers
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$100.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./product/product.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal__category__content col col-lg-3 col-md-4 col-sm-6"
+            >
+              <div class="modal__category__item">
+                <div class="modal__item__img">
+                  <img
+                    src="https://shop.cyberlearn.vn/images/converse-chuck-taylor.png"
+                    alt=""
+                    class="img__block"
+                  />
+                </div>
+                <div class="modal__item__star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="modal__item__text">
+                  <h3 class="title">
+                    <a href="./shop.html">Converse Chuck Taylor</a>
+                  </h3>
+                  <p class="sub__title">
+                    <a href="#">
+                      The Vans Coastal Classic Slip-On features sturdy low
+                      profile canvas and textile uppers
+                    </a>
+                  </p>
+                  <div class="item__text__price d-flex">
+                    <p class="title__1">$125.00</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between modal__item__cart">
+                  <div class="item__cart_left">
+                    <a href="./shop.html">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span> Add to cart </span>
+                    </a>
+                  </div>
+                  <div class="item__cart__right">
+                    <i class="fa-solid fa-receipt"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Limited Edition -->
+
+    <div>
+      <h2 class="text-center text-danger">Limited Edition</h2>
+    </div>
+    <!-- CAROUSEL -->
+    <div class="items">
+      <div class="items__title">
+        <div class="left">
+          <h2>Gear Up!</h2>
+        </div>
+        <div class="right">
+          <h2>
+            <a href="./shop.html"
+              >Go to Shop <i class="fa-solid fa-arrow-right fa-beat"></i>
+            </a>
+          </h2>
+        </div>
+      </div>
+      <div class="items__carousel">
+        <div class="item">
+          <h3 class="title">Air Force Gold</h3>
+          <img src="./img/nike/air force gold/air force 1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <h3 class="title">Air Jordan Thunder</h3>
+          <img src="./img/nike/air jordan thunder 1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <h3 class="title">Air Jordan Red</h3>
+          <img src="./img/nike/air jordan 1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <h3 class="title">Off White Vapor Max</h3>
+          <img src="./img/nike/OW vapor max black 1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <h3 class="title">Air Max Pink</h3>
+          <img src="./img/nike/pink air max 1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- END CAROUSEL -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="content">
+        <div class="column1">
+          <p><a href="#">FIND A STORE</a></p>
+          <p><a href="#">BECOME A MEMBER</a></p>
+          <p><a href="#">SEND US FEEDBACK</a></p>
+        </div>
+        <div class="column2" id="list">
+          <div class="title">
+            <p><a href="#">GET HELP</a></p>
+          </div>
+          <div class="text">
+            <ul>
+              <li><a href="">Order Status</a></li>
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Returns</a></li>
+              <li><a href="">Payment Options</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="column3" id="list">
+          <div class="title">
+            <p><a href="#">ABOUT US</a></p>
+          </div>
+          <div class="text">
+            <ul>
+              <li><a href="">News</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Investors</a></li>
+              <li><a href="">Sustainability</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="column4">
+          <div class="icon">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- slick -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+      $(".items__carousel").slick({
+        infinite: true,
+        accessibility: true,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // adaptiveHeight: true,
+        responsive: [
+          {
+            breakpoint: 1190,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 830,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/controller/index.js"></script>
+    <script src="/model/product.js"></script>
+  </body>
+</html>

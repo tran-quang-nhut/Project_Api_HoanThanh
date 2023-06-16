@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shop</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font dosis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Slick carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://kenwheeler.github.io/slick/slick/slick-theme.css"
+    />
+
+    <!-- css main -->
+    <link rel="stylesheet" href="./css/shop.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./img/air jordan logo.jpg" alt="logo air jordan"
+          /></a>
+        </div>
+        <div class="navlist">
+          <ul class="direction">
+            <li class="page"><a href="#">Men</a></li>
+            <li class="page"><a href="#">Women</a></li>
+            <li class="page"><a href="#">Kids</a></li>
+            <li class="page"><a href="#">Sale</a></li>
+          </ul>
+        </div>
+        <!-- THANH SEARCH -->
+        <div class="search">
+          <div class="search__bar">
+            <form action="">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id=""
+                  aria-describedby="helpId"
+                  placeholder="search here"
+                />
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="icons">
+          <a href="./register.html" name="sign in"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-heart"></i></a>
+          <a href="./shop.html"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+            style="display: none"
+          >
+            <i class="fa-solid fa-bars fa-lg"></i>
+          </button>
+
+          <div
+            class="offcanvas-lg offcanvas-end"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+            style="display: none"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <p
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample1"
+                    aria-expanded="false"
+                    aria-controls="multiCollapseExample1"
+                  >
+                    <span>Men</span>
+                  </button>
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2"
+                    aria-expanded="false"
+                    aria-controls="multiCollapseExample2"
+                  >
+                    <span>Women</span>
+                  </button>
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample3"
+                    aria-expanded="false"
+                    aria-controls="multiCollapseExample3"
+                  >
+                    <span>Kids</span>
+                  </button>
+                  <button
+                    class="btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample4"
+                    aria-expanded="false"
+                    aria-controls="multiCollapseExample4"
+                  >
+                    <span>Sale</span>
+                  </button>
+                </p>
+                <div class="row">
+                  <div class="row">
+                    <div class="collapse" id="multiCollapseExample1">
+                      <ul class="list-group">
+                        <li class="list-group-item">All Shoes</li>
+                        <li class="list-group-item">Newest Sneaker</li>
+                        <li class="list-group-item">Life Style</li>
+                        <li class="list-group-item">Jordan</li>
+                        <li class="list-group-item">Limited Edition</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="collapse" id="multiCollapseExample2">
+                      <ul class="list-group">
+                        <li class="list-group-item">All Shoes</li>
+                        <li class="list-group-item">Newest Sneaker</li>
+                        <li class="list-group-item">Life Style</li>
+                        <li class="list-group-item">Jordan</li>
+                        <li class="list-group-item">Limited Edition</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="collapse" id="multiCollapseExample3">
+                      <ul class="list-group">
+                        <li class="list-group-item">All Shoes</li>
+                        <li class="list-group-item">Newest Sneaker</li>
+                        <li class="list-group-item">Life Style</li>
+                        <li class="list-group-item">Jordan</li>
+                        <li class="list-group-item">Limited Edition</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="collapse" id="multiCollapseExample4">
+                      <ul class="list-group">
+                        <li class="list-group-item">All Shoes</li>
+                        <li class="list-group-item">Newest Sneaker</li>
+                        <li class="list-group-item">Life Style</li>
+                        <li class="list-group-item">Jordan</li>
+                        <li class="list-group-item">Limited Edition</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SHOP -->
+    <div class="container">
+      <div class="shop">
+        <div class="small__images">
+          <img
+          src="./img/nike/air force gold/air force 1.jpg"
+          alt=""
+          class="feature__img__1"
+          />
+          <img
+            src="./img/nike/air force gold/air force 2.jpg"
+            alt=""
+            class="feature__img__1"
+          />
+          <img
+            src="./img/nike/air force gold/air force 3.jpg"
+            alt=""
+            class="feature__img__1"
+          />
+          <img
+            src="./img/nike/air force gold/air force 4.jpg"
+            alt=""
+            class="feature__img__1"
+          />
+          <img
+            src="./img/nike/air force gold/air force 5.jpg"
+            alt=""
+            class="feature__img__1"
+          />
+        </div>
+        <div class="big__image">
+          <img
+            src="./img/nike/air force gold/air force 1.jpg"
+            alt=""
+            class="big__img__1"
+          />
+        </div>
+        <div class="description">
+          <h2 id="shoeName">Air Force Gold</h2>
+          <br />
+          <span id="price"> Price: 5,600,000 VND</span>
+          <br />
+          <p id="shoeDescrip">
+            Here's your golden ticket to an ultra-fly outfit. <br />
+            University Gold on the Swoosh stands out like a dream <br />
+            against the clean white upper, making this AF-1 a win <br />
+            for any sneaker aficionado. The original shape and backtab <br />
+            graphics keep the look iconic and that Gum-coloured outsole <br />
+            contains Nike Air cushioning for all your stomping needs.
+          </p>
+          <div class="size">
+            <div class="text">
+              <p>Select Size</p>
+              <div class="size__choices">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="size40"
+                  />
+                  <label class="form-check-label" for="size40"> 40 </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="size405"
+                  />
+                  <label class="form-check-label" for="size405"> 40.5 </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="size41"
+                  />
+                  <label class="form-check-label" for="size41"> 41 </label>
+                </div>
+              </div>
+              <div class="size__choices">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="size42"
+                  />
+                  <label class="form-check-label" for="size42"> 42 </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="size425"
+                  />
+                  <label class="form-check-label" for="size425"> 42.5 </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="size43"
+                  />
+                  <label class="form-check-label" for="size43"> 43 </label>
+                </div>
+              </div>
+              <div class="size__choices">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="size44"
+                  />
+                  <label class="form-check-label" for="size44"> 44 </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="size445"
+                  />
+                  <label class="form-check-label" for="size445"> 44.5 </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="size45"
+                  />
+                  <label class="form-check-label" for="size45"> 45 </label>
+                </div>
+              </div>
+              <div class="size__choices">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="size46"
+                  />
+                  <label class="form-check-label" for="size46"> 46 </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="size465"
+                  />
+                  <label class="form-check-label" for="size465"> 46.5 </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="size47"
+                  />
+                  <label class="form-check-label" for="size47"> 47 </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bag">
+            <button class="btn btn-dark text-white" id="buy">
+              <p>Add to Bag</p>
+            </button>
+            <button class="btn text-dark" id="add">
+              <p>Favourite <i class="fa-solid fa-heart"></i></p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SHOP -->
+
+    <!-- CAROUSEL -->
+    <div class="items">
+      <div class="items__title">
+        <div class="left">
+          <h2>You Might Also Like</h2>
+        </div>
+      </div>
+      <div class="items__carousel">
+        <div class="item">
+          <h3 class="title">Air Force Gold</h3>
+          <img src="./img/nike/air force gold/air force 1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <h3 class="title">Air Jordan Thunder</h3>
+          <img src="./img/nike/air jordan thunder 1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <h3 class="title">Air Jordan Red</h3>
+          <img src="./img/nike/air jordan 1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <h3 class="title">Off White Vapor Max</h3>
+          <img src="./img/nike/OW vapor max black 1.jpg" alt="" />
+        </div>
+        <div class="item">
+          <h3 class="title">Air Max Pink</h3>
+          <img src="./img/nike/pink air max 1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- END CAROUSEL -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="content">
+        <div class="column1">
+          <p><a href="#">FIND A STORE</a></p>
+          <p><a href="#">BECOME A MEMBER</a></p>
+          <p><a href="#">SEND US FEEDBACK</a></p>
+        </div>
+        <div class="column2" id="list">
+          <div class="title">
+            <p><a href="#">GET HELP</a></p>
+          </div>
+          <div class="text">
+            <ul>
+              <li><a href="">Order Status</a></li>
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Returns</a></li>
+              <li><a href="">Payment Options</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="column3" id="list">
+          <div class="title">
+            <p><a href="#">ABOUT US</a></p>
+          </div>
+          <div class="text">
+            <ul>
+              <li><a href="">News</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Investors</a></li>
+              <li><a href="">Sustainability</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="column4">
+          <div class="icon">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- slick -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+      $(".items__carousel").slick({
+        infinite: true,
+        accessibility: true,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // adaptiveHeight: true,
+        responsive: [
+          {
+            breakpoint: 1190,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 830,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
+
+    <!-- js main -->
+    <script src="./shop_img_change.js"></script>
+
+  </body>
+</html>
